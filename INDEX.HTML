@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tarea Formularios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="procesa.php" method="POST">
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label>Name:<br>
+                <input type="text" name="Name" required="required" placeholder="Name"></label><br>
+                <label>Email:<br>
+                <input type="text" name="Email" required="required" placeholder="Email"></label>
+             </fieldset>
+
+             <fieldset>
+                     <legend>Your Review:</legend>
+                        <p>How did you hear about us?</p>
+                    <select name="dispositivos">
+                         <option value="Instagram">Instagram</option>
+                         <option value="Facebook">Facebook</option>
+                         <option value="LinkedIn">LinkedIn</option>
+                         <option value="Twitter">Twitter</option>
+                         <option value="Others">Others</option>
+
+                    </select><br>
+
+                       <p>Would you visit again?</p>
+                            <br>
+                            <input type="checkbox" name="Yes" value="value">Yes
+                            <input type="checkbox" name="No" value="value">No
+                            <input type="checkbox" name="Maybe" value="value">Maybe<br>
+
+                            <p>Comments</p>
+                            <textarea name="Comments"></textarea><br>
+
+                            <input type="checkbox" name="Singup..." value="value">Sing me up for email updates<br>
+                            <input type="submit" value="Submit review">
+                   
+
+             </fieldset>
+        </form>
+    
+    </body>
+</html>
